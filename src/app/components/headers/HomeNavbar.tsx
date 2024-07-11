@@ -1,7 +1,8 @@
 import { Box, Button, Container, Stack } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import Basket from "./Basket";
 
-export function HomeNavbar(){
+export default function HomeNavbar(){
 
     const authMember = null;
 
@@ -34,7 +35,7 @@ export function HomeNavbar(){
                 </Box>
               
                 {/* Basket */}
-
+                <Basket/>
                 {!authMember ? (<Box><Button variant="contained" className="login-button">Login</Button></Box>) : (<img className="user-avatar"
                 src={"/icons/default-user.svg"}
                 aria-haspopup={"true"}
