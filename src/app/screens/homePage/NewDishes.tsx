@@ -7,7 +7,7 @@ import Card from '@mui/joy/Card';
 import Typography from '@mui/joy/Typography';
 import CardOverflow from '@mui/joy/CardOverflow';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import Divider from "../../app/components/divider"
+import Divider from "../../components/divider";
 
 const newDishes = [
     {productName: "Lavash", imagePath: "/img/lavash.webp"},
