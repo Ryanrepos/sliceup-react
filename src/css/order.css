@@ -1,0 +1,98 @@
+.order-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.order-page .order-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.order-page .order-left {
+    width: 860px;
+    height: auto;
+    background-color: white;
+}
+
+.order-page .order-left .order-nav-frame {
+    margin-left: 40px;
+}
+
+.order-page .order-left .order-main-content {
+    background-color: aqua;
+    margin-top: 30px;
+}
+
+.order-page .order-right {
+    width: 360px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-page .order-right .order-info-box {
+    width: 372px;
+    height: 308px;
+    background-color: white;
+}
+
+.order-page .order-right .order-info-box .member-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-page .order-right .order-info-box .member-box .order-user-img {
+    margin-top: 10px;
+    width: 117px;
+    height: 112px;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.order-page .order-right .order-info-box .member-box .order-user-name {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #08090D;
+}
+
+.order-page .order-right .order-info-box .member-box .order-user-prof {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #A1A1A1;
+}
+
+.order-page .order-right .order-info-box .liner {
+    margin-top: 40px;
+    width: 332;
+    /* TODO: Line with here */
+}
+
+.order-page .order-right .order-info-box .order-user-address {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.order-price {
+    width: 372px;
+    height: 253px;
+    background-color: #fff
+}
+
+
+
