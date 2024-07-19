@@ -9,6 +9,7 @@ import ProcessOrders from "./ProcessOrders";
 import FinishedOrders from "./FinishedOrders";
 import Divider from "../../components/divider";
 import "../../../css/order.css"
+import TabPanel from "@mui/lab/TabPanel/TabPanel";
 
 export default function OrdersPage() {
 // useState("1") => bu 1 degani page ochilganda ko'rinadigan Tab index
@@ -33,9 +34,9 @@ export default function OrdersPage() {
                   </Box>
                 </Box>
                 <Stack className={"order-main-content"}>
-                  <PausedOrders />
-                  <ProcessOrders />
-                  <FinishedOrders />
+                <TabPanel value="1"><PausedOrders /></TabPanel>
+                <TabPanel value="2"><ProcessOrders /></TabPanel>
+                <TabPanel value="3"><FinishedOrders /></TabPanel>
                 </Stack>
               </TabContext>
             </Stack>

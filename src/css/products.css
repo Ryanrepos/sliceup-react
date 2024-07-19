@@ -46,6 +46,12 @@
     justify-content: space-around;
 }
 
+.products .products-big-box .products-subject .products-title-box .search-container {
+  background-color: rgb(210, 205, 205);
+  border-radius: 20px;
+
+}
+
 .products .products-big-box .products-title-box .products-title {
     color: #343434;
 
@@ -144,8 +150,8 @@
     background: #f8f8ff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative; /* Ensure the image is positioned correctly within the card */
-    border-top-right-radius: 50px; /* Apply border-radius to top-right corner */
+    position: relative; 
+    border-top-right-radius: 50px; 
     transition: opacity 0.3s ease;
     opacity: 1;
 }
@@ -158,8 +164,8 @@
     flex-direction: column;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative; /* Ensure the image is positioned correctly within the card */
-    border-top-right-radius: 50px; /* Apply border-radius to top-right corner */
+    position: relative; 
+    border-top-right-radius: 50px; 
     opacity: 0.5;
 }
 
@@ -176,7 +182,6 @@
     padding: 10px;
     transition: opacity 0.3s ease;
     opacity: 1;
-
 
 }
 
