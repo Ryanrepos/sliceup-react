@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     display: flex;
+    background-color: #fff;
 }
 
 .order-page .order-container {
@@ -170,4 +171,47 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+}
+
+/* PROCESS ORDER */
+.process-box-total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.process-action-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.data-compl {
+    background-color: #ece7e7;
+    padding: 2px;
+}
+
+.process-action-buttons .process-verify-button {
+    width: 110px;
+}
+
+/* FINISHED ORDER */
+
+.finished-total-price-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 700px;
+}
+
+.finished-box-total {
+    display: flex;
+    flex-direction: row;;
+    align-items: center;
+    justify-content: space-between;
 }

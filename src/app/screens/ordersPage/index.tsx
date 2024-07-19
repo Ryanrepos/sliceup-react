@@ -28,8 +28,8 @@ export default function OrdersPage() {
                   <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                       <Tab label="PAUSED ORDERS" value={"1"} />
-                      <Tab label="PAUSED ORDERS" value={"2"} />
-                      <Tab label="PAUSED ORDERS" value={"3"} />
+                      <Tab label="PROCESS ORDERS" value={"2"} />
+                      <Tab label="FINISHED ORDERS" value={"3"} />
                     </Tabs>
                   </Box>
                 </Box>
