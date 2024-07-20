@@ -1,5 +1,5 @@
 import { useState, SyntheticEvent } from "react";
-import { Container, Stack, Box } from "@mui/material";
+import { Container, Stack, Box, Badge, Avatar, Button } from "@mui/material";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
@@ -10,6 +10,9 @@ import FinishedOrders from "./FinishedOrders";
 import Divider from "../../components/divider";
 import "../../../css/order.css"
 import TabPanel from "@mui/lab/TabPanel/TabPanel";
+import { Height } from "@mui/icons-material";
+import { CssVarsProvider } from '@mui/joy/styles';
+import { Input } from "@mui/joy";
 
 export default function OrdersPage() {
 // useState("1") => bu 1 degani page ochilganda ko'rinadigan Tab index
@@ -46,17 +49,29 @@ export default function OrdersPage() {
             <Stack className={"order-right"}>
                 <Box className={"order-info-box"}>
                   <Box className={"member-box"}>
-                      <div className={"order-user-img"}>
-                        <img src={"/icons/default-user.svg"} className={"order-user-avatar"} />
-                        <div className={"order-user-icon-box"}>
-                          <img src={"/icons/user-badge.svg"} className={"order-user-prof-img"} />
-                        </div>
-                      </div>
+                      <Badge
+                            overlap="circular"
+                            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                            badgeContent={
+                              <Avatar
+                                alt="Remy Sharp"
+                                src="/icons/user-badge.svg"
+                                style={{ width: 30, height: 30 }} // Inline styles for the badge
+                              />
+                            }
+                          >
+                            <Avatar
+                              alt="Travis Howard"
+                              src="/img/user-pic.jpg"
+                              style={{ width: 100, height: 100, borderRadius: "37px" }} // Inline styles for the profile image
+                            />
+                          </Badge>
+
                       <span className={"order-user-name"}>Ryan</span>
                       <span className={"order-user-prof"}>USER</span>
                   </Box>
-                  <Box className={"liner"}>
-                    <Divider height="2" width="300" bg="#E3C08D" />
+                  <Box className={"liner"} style={{ width: 100, height: 2 }} >
+                    <Divider height="2" width="320" bg="#E3C08D" />
                   </Box>
                   <Box className={"order-user-address"}>
                     <div style={{display: "flex"}}>
@@ -66,7 +81,58 @@ export default function OrdersPage() {
                   </Box>
                 </Box>
                 <Box className={"order-price"}>
-                  Checkout
+                  <CssVarsProvider>
+                     <div className={"order-card-number"}>
+                     <Input 
+                        size="md" 
+                        placeholder="1234 5679 9999 0000" 
+                        sx={{ width: '100%', height: '100%' }}
+                      />
+                      </div>
+                  </CssVarsProvider>
+                  <Box className={"card-validity"}>
+                  <CssVarsProvider>
+                  <div className={"expire-day"}>
+                      <Input 
+                        size="md" 
+                        placeholder="07/24" 
+                        sx={{ width: '100%', height: '100%' }}
+                      />
+                    </div>
+                  </CssVarsProvider>
+                   <CssVarsProvider>
+                   <div className={"cv-number"}>
+                      <Input 
+                        size="md" 
+                        placeholder="CV: 010" 
+                        sx={{ width: '100%', height: '100%' }}
+                      />
+                    </div>
+                   </CssVarsProvider>
+                  </Box>
+                  <CssVarsProvider>
+                  <div className={"order-person-name"}>
+                  <Input 
+                        size="md" 
+                        placeholder="Name on your card" 
+                        sx={{ width: '100%', height: '100%' }}
+                      />
+                  </div>
+                  </CssVarsProvider>
+                  <div className={"visa-button-image"}>
+                    <Button>
+                      <img src="/img/western-union.svg" alt="" />
+                    </Button>
+                    <Button>
+                      <img src="/img/master-card.svg" alt="" />
+                    </Button>
+                    <Button>
+                      <img src="/img/paypal.svg" alt="" />
+                    </Button>
+                    <Button>
+                      <img src="/img/visa.svg" alt="" />
+                    </Button>
+                  </div>
                 </Box>
             </Stack>
         </Container>

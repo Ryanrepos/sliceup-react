@@ -33,7 +33,7 @@
 .order-page .order-right {
     width: 360px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,11 @@
 .order-page .order-right .order-info-box {
     width: 372px;
     height: 308px;
-    background-color: white;
+    border: 1px solid #ccc; /* Optional: border to visualize the boxes */
+    border-radius: 20px;
+    box-shadow: 
+    5px 5px 10px rgba(0, 0.3, 0, 0.3), /* outer shadow */
+    inset 0 0 10px rgba(0, 0.3, 0, 0.3); /* inner shadow */
 }
 
 .order-page .order-right .order-info-box .member-box {
@@ -51,16 +55,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.order-page .order-right .order-info-box .member-box .order-user-img {
-    margin-top: 10px;
-    width: 117px;
-    height: 112px;
-    display: flex;
-    flex-direction: row;
-    background-color: aqua;
-    border-radius: 50px;
+    padding: 20px;
 }
 
 .order-page .order-right .order-info-box .member-box .order-user-name {
@@ -76,8 +71,8 @@
 }
 
 .order-page .order-right .order-info-box .liner {
-    margin-top: 40px;
-    width: 332;
+    margin-top: 20px;
+    margin-left: 26px;
     /* TODO: Line with here */
 }
 
@@ -86,19 +81,75 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
     font-size: 16px;
 }
 
+/* CHECKOUT CARD */
 .order-price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 372px;
     height: 253px;
-    background-color: #fff
+    border: 1px solid #ccc; /* Optional: border to visualize the boxes */
+    border-radius: 20px;
+    gap: 10px;
+    box-shadow: 
+    5px 5px 10px rgba(0, 0.3, 0, 0.3), /* outer shadow */
+    inset 0 0 10px rgba(0, 0.3, 0, 0.3); /* inner shadow */
+}
+
+.order-price .order-card-number {
+    width: 332px;
+    height: 40px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(36, 11, 119);
+}
+
+.order-price .card-validity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.order-price .card-validity .expire-day {
+    width: 162px;
+    height: 40px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(36, 11, 119);
+}
+
+
+.order-price .card-validity .cv-number {
+    width: 162px;
+    height: 40px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(36, 11, 119);;
+}
+
+.order-price .order-person-name {
+    width: 332px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(36, 11, 119);;
+}
+
+.visa-button-image {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* PAUSED ORDERS SECTION */
-
 .order-main-box {
     display: flex;
     flex-direction: column;
