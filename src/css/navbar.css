@@ -131,7 +131,7 @@
 
 }
 
-.home-navbar .navbar-container .detail .signup {
+.home-navbar .navbar-container .header-frame .detail .signup {
     margin-top: 73px;
 }
 
@@ -139,7 +139,7 @@
     width: 210px;
     height: 60px;
     border-radius: 4px;
-    background: #1976d2;
+    background: #1f28a3;
     color: #f8f8ff;
     text-align: center;
     font-family: Poppins;
