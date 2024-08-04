@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { HomePageState } from "../../lib/types/screen";
 
+// Initial state for Homepage slice of redux store
 const initialState: HomePageState = {
   popularDishes: [],
   newDishes: [],
@@ -8,6 +9,7 @@ const initialState: HomePageState = {
 };
 
 const homePageSlice = createSlice({
+  // createSlice is function from redux toolkit
   name: "homePage",
   initialState,
   reducers: {
