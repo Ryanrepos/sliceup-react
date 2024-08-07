@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box, Button, Container, InputAdornment, Stack, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
@@ -16,6 +16,9 @@ import { setProducts } from "./slice";
 import { createSelector } from "reselect";
 import { retrieveProducts } from "./selector";
 import { Product } from "../../lib/types/product";
+import ProductService from "../../services/ProductService";
+import { ProductCollection } from "../../lib/enums/product.enum";
+import { serverApi } from "../../lib/config";
 
 /** REDUX SLICE & SELECTOR **/
 const actionDispatch = (dispatch: Dispatch) => ({
@@ -27,16 +30,16 @@ const actionDispatch = (dispatch: Dispatch) => ({
     (products) => ({products})
   );
 
-const products = [
-    { productName: "Cutlet", imagePath: "/img/cutlet.webp" },
-    { productName: "Kebab", imagePath: "/img/kebab-fresh.webp" },
-    { productName: "Kebab", imagePath: "/img/kebab.webp" },
-    { productName: "Lavash", imagePath: "/img/lavash.webp" },
-    { productName: "Lavash", imagePath: "/img/lavash.webp" },
-    { productName: "Cutlet", imagePath: "/img/cutlet.webp" },
-    { productName: "Kebab", imagePath: "/img/kebab.webp" },
-    { productName: "Kebab", imagePath: "/img/kebab-fresh.webp" },
-];
+// const products = [
+//     { productName: "Cutlet", imagePath: "/img/cutlet.webp" },
+//     { productName: "Kebab", imagePath: "/img/kebab-fresh.webp" },
+//     { productName: "Kebab", imagePath: "/img/kebab.webp" },
+//     { productName: "Lavash", imagePath: "/img/lavash.webp" },
+//     { productName: "Lavash", imagePath: "/img/lavash.webp" },
+//     { productName: "Cutlet", imagePath: "/img/cutlet.webp" },
+//     { productName: "Kebab", imagePath: "/img/kebab.webp" },
+//     { productName: "Kebab", imagePath: "/img/kebab-fresh.webp" },
+// ];
 
 const logos = [
     { productName: "Gurme", imagePath: "/img/gurme.webp" },
@@ -46,6 +49,21 @@ const logos = [
 ];
 
 export default function Products(){
+
+    const {setProducts} = actionDispatch(useDispatch());
+    const {products} = useSelector(productsRetriever);
+
+    useEffect(() => {
+        const product = new ProductService();
+        product.getProducts({
+            page: 1,
+            limit: 8,
+            order: "createdAt",
+            productCollection: ProductCollection.DISH,
+            search: "",
+        }).then((data) => setProducts(data))
+        .catch((err) => console.log(err));
+    }, []);
     return(
         <div className="products">
             <Container>
@@ -127,11 +145,16 @@ export default function Products(){
                         </Stack>
                         <Stack className={"product-wrapper"}>
                         {products.length !== 0 ? (
-                           products.map((product, index) => {
+                           products.map((product: Product) => {
+                            const imagePath = `${serverApi}/${product.productImages[0]}`
+                            const sizeVolume = 
+                                product.productCollection === ProductCollection.DRINK 
+                                ? product.productVolume + " litre"
+                                : product.productSize + " size";
                         return (
-                          <Stack key={index} className={"product-card"}>
-                            <Stack className={"product-img"} sx={{backgroundImage: `url(${product.imagePath})`}}>
-                                <div className="product-sale">Normal Size</div>
+                          <Stack key={product._id} className={"product-card"}>
+                            <Stack className={"product-img"} sx={{backgroundImage: `url(${imagePath})`}}>
+                                <div className="product-sale">{sizeVolume}</div>
                                 <div className="shop-btn-background">
                                 <Button className={"shop-btn"}>
                                     <img src={"/icons/shopping-cart.svg"} style={{display: "flex"}} />
@@ -139,8 +162,8 @@ export default function Products(){
                                 </div>
                                 <div className={"view-btn-background"}>
                                 <Button className={"view-btn"}>
-                                    <Badge badgeContent={20} color="secondary">
-                                        <RemoveRedEyeIcon sx={{color: 20 ? "gray" : "white",}}/>
+                                    <Badge badgeContent={product.productViews} color="secondary">
+                                        <RemoveRedEyeIcon sx={{color: product.productViews === 0 ? "gray" : "white",}}/>
                                     </Badge>
                                 </Button>
                                 </div>
@@ -152,7 +175,7 @@ export default function Products(){
                                 <div className={"product-desc"}>
                                     <Stack className="product-ttl">
                                         <span className="gold"> <MonetizationOnIcon/></span>
-                                        <span className="gold">{12}</span>
+                                        <span className="gold">{product.productPrice}</span>
                                     </Stack>
                                 </div>
                             </Box>
