@@ -17,7 +17,7 @@ class ProductService {
         url += `&productCollection=${input.productCollection}`;
       if (input.search) url += `&search=${input.search}`;
 
-      const result = await axios.get(url);
+      const result = await axios.get(url); // get ichida argument pass bolyabdi.
       console.log("getProducts result:", result.data); // Log the fetched data
 
       return result.data;

@@ -32,7 +32,7 @@ export default function HomePage() {
 
     const product = new ProductService();
     product.getProducts({
-      page: 1,
+      page: 1,  // arguments
       limit: 4,
       order: "productsViews",
       productCollection: ProductCollection.DISH,
