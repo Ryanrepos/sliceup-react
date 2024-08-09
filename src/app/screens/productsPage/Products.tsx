@@ -62,7 +62,7 @@ export default function Products(){
         productSearch.search = "";
         setProductSearch({...productSearch});
       }
-    })
+    }, []);
   
     // HANDLERS
   
