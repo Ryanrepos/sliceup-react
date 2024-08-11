@@ -29,7 +29,8 @@ export default function ActiveUsers() {
                                 const imagePath = `${serverApi}/${member.memberImage}`
 
                                 return (
-                                    <Stack className={"card"}>
+                                    <Stack key={member._id} className={"card"}>
+
                                         <img src={imagePath} />
                                         <div className={"card-name"}>{member.memberNick}</div>
                                     </Stack>
