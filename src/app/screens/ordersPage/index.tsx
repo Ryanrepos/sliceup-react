@@ -13,10 +13,28 @@ import TabPanel from "@mui/lab/TabPanel/TabPanel";
 import { Height } from "@mui/icons-material";
 import { CssVarsProvider } from '@mui/joy/styles';
 import { Input } from "@mui/joy";
+import { useDispatch } from "react-redux";
+import { Dispatch } from "@reduxjs/toolkit";
+import { setPausedOrders, setProcessOrders, setFinishedOrders  } from "./slice";
+import { Order } from "../../lib/types/order";
+
+/** REDUX SLICE & SELECTOR **/
+const actionDispatch = (dispatch: Dispatch) => ({
+  setPausedOrders: (data: Order[]) => dispatch(setPausedOrders(data)), 
+  setProcessOrders: (data: Order[]) => dispatch(setProcessOrders(data)), 
+  setFinishedOrders: (data: Order[]) => dispatch(setFinishedOrders(data)), 
+
+});
 
 export default function OrdersPage() {
 // useState("1") => bu 1 degani page ochilganda ko'rinadigan Tab index
+
+  const {setPausedOrders, setProcessOrders, setFinishedOrders} = actionDispatch(useDispatch());
+
   const [value, setValue] = useState("1");
+
+  /** HANDLERS **/
+  
 
   const handleChange = (e: SyntheticEvent, newValue: string) => {
     setValue(newValue);

@@ -1,7 +1,6 @@
 import axios from "axios";
 import { serverApi } from "../lib/config";
 import { LoginInput, Member, MemberInput } from "../lib/types/member";
-import { promises } from "dns";
 
 class MemberService {
   private readonly path: string;
