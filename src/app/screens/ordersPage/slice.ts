@@ -10,7 +10,7 @@ const initialState: OrdersPageState = {
 
 const ordersPageSlice = createSlice({
   // createSlice is function from redux toolkit
-  name: "homePage",
+  name: "ordersPage",
   initialState,
   reducers: {
     setPausedOrders: (state, action) => {
