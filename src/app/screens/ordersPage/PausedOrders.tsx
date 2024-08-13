@@ -41,7 +41,7 @@ const deleteOrderHandler = async (e: T) => {
             orderStatus: OrderStatus.DELETE,
         };
 
-        const confirmation = window.confirm("Do you want to proceed the order?");
+        const confirmation = window.confirm("Do you want to delte the order?");
         if(confirmation) {
             const order = new OrderService();
             await order.updateOrder(input);
