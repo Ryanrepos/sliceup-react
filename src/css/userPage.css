@@ -43,7 +43,7 @@
 	font-style: normal;
 	font-weight: 600;
 	font-size: 45px;
-	color: black
+	color: #f8f8ff;
 }
 
 .my-page-left .menu-content {
@@ -87,11 +87,8 @@
 	flex-direction: column;
 	align-items: center;
 	background: #f6f2ff;
+	box-shadow: 15px 14px 4px rgba(0, 0, 0, 0.25), inset -1px 0px 16px 13px rgb(24 23 112 / 20%);
 	border-radius: 16px;
-
-	box-shadow: 
-    5px 5px 10px rgba(0, 0.3, 0, 0.3), /* outer shadow */
-    inset 0 0 10px rgba(0, 0.3, 0, 0.3); /* inner shadow */
 }
 
 .user-page .order-info-box .settings-btn {
@@ -273,7 +270,6 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-	gap: 20px;
 	border-radius: 5px;
 }
 
