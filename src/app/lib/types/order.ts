@@ -11,7 +11,7 @@ export interface OrderItemInput {
 export interface OrderItem {
   _id: string;
   itemQuantity: number;
-  ItemPrice: number;
+  itemPrice: number;
   orderId: string;
   productId: string;
   createAt: Date;
