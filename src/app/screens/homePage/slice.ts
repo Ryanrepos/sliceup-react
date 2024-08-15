@@ -26,7 +26,7 @@ const homePageSlice = createSlice({
 });
 
 export const { setPopularDishes, setNewDishes, setTopUsers } =
-  homePageSlice.actions;
+  homePageSlice.actions; // tashqarida ishlatish uchun export qildik
 
-const HomePageReducer = homePageSlice.reducer;
+const HomePageReducer = homePageSlice.reducer; // store da ishlatish un export qldik
 export default HomePageReducer;

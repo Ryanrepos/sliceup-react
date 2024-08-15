@@ -20,15 +20,11 @@ import { MemberType } from "../../lib/enums/member.enum";
 import "../../../css/order.css"
 import { serverApi } from "../../lib/config";
 
-
-
 const actionDispatch = (dispatch: Dispatch) => ({
   setPausedOrders: (data: Order[]) => dispatch(setPausedOrders(data)),
   setProcessOrders: (data: Order[]) => dispatch(setProcessOrders(data)),
   setFinishedOrders: (data: Order[]) => dispatch(setFinishedOrders(data)),
 });
-
-
 
 export default function OrdersPage() {
   const {setPausedOrders, setProcessOrders, setFinishedOrders} = actionDispatch(useDispatch());
@@ -47,16 +43,13 @@ export default function OrdersPage() {
     order.getMyOrders({...orderInquiry, orderStatus: OrderStatus.PROCESS}).then((data) => setProcessOrders(data)).catch((err) => console.log(err));
     order.getMyOrders({...orderInquiry, orderStatus: OrderStatus.FINISH}).then((data) => setFinishedOrders(data)).catch((err) => console.log(err));
 
-
   }, [orderInquiry, orderBuilder]);
-
 
   const handleChange = (e: SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
 
   if(!authMember) history.push("/");
-
 
     return <div className={"order-page"}>
       <Container className={"order-container"}>

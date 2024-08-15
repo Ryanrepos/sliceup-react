@@ -15,7 +15,7 @@ import MemberService from "../../services/MemberService";
 import { Member } from "../../lib/types/member";
 import "../../../css/home.css"
 
-/** REDUX SLICE & SELECTOR **/
+/** REDUX SLICE **/
 const actionDispatch = (dispatch: Dispatch) => ({
   setPopularDishes: (data: Product[]) => dispatch(setPopularDishes(data)), 
   setNewDishes: (data: Product[]) => dispatch(setNewDishes(data)), 
@@ -25,7 +25,8 @@ const actionDispatch = (dispatch: Dispatch) => ({
 
 export default function HomePage() {
   
-  const { setPopularDishes, setNewDishes, setTopUsers } = actionDispatch(useDispatch());
+  // tepadagi actionDispatchni chaqirib oldik
+  const { setPopularDishes, setNewDishes, setTopUsers } = actionDispatch(useDispatch()); 
 
   useEffect(() => {
     // Backend server data request => Data
@@ -38,7 +39,7 @@ export default function HomePage() {
       productCollection: ProductCollection.DISH,
     }).then((data) => {
         console.log("data passed here:", data);
-        setPopularDishes(data);
+        setPopularDishes(data);  // buyerda redux store ga olib kelingan datani yuklayabmiz
     }).catch((err) => console.log(err)) ;
 
     product.getProducts({
@@ -47,13 +48,13 @@ export default function HomePage() {
       order: "createdAt",
       // productCollection: ProductCollection.DISH,
     }).then((data) => {
-        setNewDishes(data);
+        setNewDishes(data);  // buyerda redux store ga olib kelingan datani yuklayabmiz
     }).catch((err) => console.log(err)) ;
 
     const member = new MemberService();
     member.getTopUsers().then(
       (data) => {
-        setTopUsers(data);
+        setTopUsers(data);  // buyerda redux store ga olib kelingan datani yuklayabmiz
       }
     ).catch((err) => console.log(err)) ;
 
