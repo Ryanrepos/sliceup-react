@@ -27,7 +27,6 @@ export default function HomePage() {
   
   // tepadagi actionDispatchni chaqirib oldik
   const { setPopularDishes, setNewDishes, setTopUsers } = actionDispatch(useDispatch()); 
-
   useEffect(() => {
     // Backend server data request => Data
 
