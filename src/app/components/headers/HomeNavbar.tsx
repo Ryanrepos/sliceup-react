@@ -44,8 +44,10 @@ export default function HomeNavbar(props: HomeNavbarProps){
             <Stack className="menu">
                 <Box>
                     <NavLink to="/">
-                        <img className="brand-logo" src="/icons/burak.svg" />
-
+                        <Box className="navbar-logo">
+                            <img className="brand-logo" src="/img/pizza-logo.webp" />
+                            <div className="brand-text">SLICE UP</div>
+                        </Box>
                     </NavLink>
                 </Box>
                 <Stack className="links">
@@ -53,7 +55,7 @@ export default function HomeNavbar(props: HomeNavbarProps){
                     <NavLink to="/" activeClassName={"underline"}>Home</NavLink>
                 </Box>
                 <Box className={"hover-line"}>
-                    <NavLink to="/products" activeClassName={"underline"}>Products</NavLink>
+                    <NavLink to="/products" activeClassName={"underline"}>Offerings</NavLink>
                 </Box>
                 {authMember ? ( <Box className={"hover-line"}>
                     <NavLink to="/orders" activeClassName={"underline"}>Orders</NavLink>
@@ -64,7 +66,7 @@ export default function HomeNavbar(props: HomeNavbarProps){
                 </Box>) : null}
 
                 <Box className={"hover-line"}>
-                    <NavLink to="/help" activeClassName={"underline"}>Help</NavLink>
+                    <NavLink to="/help" activeClassName={"underline"}>Support</NavLink>
                 </Box>
               
                 {/* Basket */}
@@ -132,15 +134,15 @@ export default function HomeNavbar(props: HomeNavbarProps){
             </Stack>
             <Stack className="header-frame">
                 <Stack className="detail">
-                    <Box className={"head-main-txt"}>World's Most Delicious Cousine</Box>
-                    <Box className={"wel-txt"}>The Choice, not just a choice</Box>
-                    <Box className={"service-txt"}>24 hours service</Box>
+                    <Box className={"head-main-txt"}>Your Slice of Happiness, Anytime</Box>
+                    <Box className={"wel-txt"}>Not Just a Slice, It’s a Craving</Box>
+                    <Box className={"service-txt"}>Hot & Fresh, 24/7</Box>
                     <Box className={"signup"}>
-                        {!authMember ? (<Button variant="contained" className={"signup-button"} onClick={() => setSignupOpen(true)}> SIGN UP</Button>) : null}
+                        {!authMember ? (<Button variant="contained" className={"signup-button"} onClick={() => setSignupOpen(true)}> Join Us</Button>) : null}
                     </Box>
                 </Stack>
                 <Stack className="logo-frame">
-                    <div className="logo-img"></div>
+            
                 </Stack>
             </Stack>
         </Container>

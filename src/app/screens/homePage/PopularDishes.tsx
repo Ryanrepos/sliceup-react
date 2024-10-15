@@ -32,7 +32,7 @@ export default function PopularDishes() {
     return (<div className={"popular-dishes-frame"}>
         <Container>
             <Stack className={"popular-section"}>
-                <Box className={"category-title"}>Popular Dishes</Box>
+                <Box className={"category-title"}>Best Sellers</Box>
                 <Stack className={"cards-frame"}>
                 {popularDishes.length !== 0 ? (
                     popularDishes.map((product: Product) => {

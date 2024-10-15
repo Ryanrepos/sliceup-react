@@ -61,8 +61,8 @@ export default function HomePage() {
 
 
   return <div className="homepage">
-     <Statistics/>
      <PopularDishes/>
+     <Statistics/>
      <NewDishes/>
      <Advertisement/>
      <ActiveUsers/>

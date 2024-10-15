@@ -8,8 +8,8 @@
 
 .homepage .static-frame {
     width: 100%;
-    height: 236px;
-    background-color: #343434;
+    height: 150px;
+    background-color:#C75B7A;
 }
 
 .homepage .static-frame .info {
@@ -32,11 +32,11 @@
  .homepage .static-frame .info .static-box .static-num {
     text-align: center;
     font-family: Poppins;
-    font-size: 54px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 600;
     line-height: 80px;
-    color: #d7b686;
+    color: #FFFFFF;
 
  }
 
@@ -47,7 +47,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    color: #d7b686;
+    color: #FFFFFF;
 
  }
 
@@ -60,7 +60,7 @@
 }
 
 .homepage .popular-dishes-frame .popular-section {
-   margin-top: 45px;
+   margin-top: 40px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -78,7 +78,7 @@
 
 .homepage .popular-dishes-frame .popular-section .cards-frame {
    width: 100%;
-   margin-top: 43px;
+   margin-top: 30px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -88,6 +88,7 @@
    min-height: 430px;
    min-width: 300px;
    cursor: pointer;
+   margin-top: 10px;
 }
 
 .homepage .popular-dishes-frame .cards-frame .card .card-cover {
@@ -123,14 +124,15 @@
 }
 
 .homepage .main {
-    margin-top: 45px;
+    margin-top: 40px;
     display: flex;
+    height: auto;
     flex-direction: column;
     align-items: center;
 }
 
 .homepage .new-products-frame  .category-title {
-    margin-top: 50px;
+    margin-top: 10px;
     font-family: "Dancing Script";
     font-style: normal;
     font-weight: 700;
@@ -140,14 +142,17 @@
 
 .homepage .new-products-frame .main .cards-frame {
     width: 100%;
+    height: auto;
     margin: 5px 2px 2px 2px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .homepage .new-products-frame .main .card {
-    height: 335px;
+    height: 350px;
     width: 290px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -173,13 +178,18 @@
 
 .homepage .new-products-frame .product-detail {
     width: auto;
-    height: 49%;
+    height: auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin-top: -12px;
     border-top: 1px solid;
-    border-color: #f8f8ff;
+    border-color: #8d8d9d;
     background-color: #fafbfb;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .homepage .new-products-frame .product-detail .info {
@@ -191,7 +201,7 @@
 }
 
 .homepage .new-products-frame .product-detail .title {
-    width: 65px;
+    width: 100px;
     font-weight: 500;
 }
 

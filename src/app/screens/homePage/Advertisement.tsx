@@ -12,7 +12,7 @@ export default function Advertisement() {
           playsInline
           data-video-media=""
         >
-            <source type="video/mp4" src="video/burak-ads.mp4" />
+            <source type="video/mp4" src="video/sliceup-ads.mp4" />
         </video>
     </div>
     );

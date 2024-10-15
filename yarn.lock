@@ -1792,6 +1792,18 @@
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.5.tgz"
   integrity sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==
 
+"@lottiefiles/dotlottie-react@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@lottiefiles/dotlottie-react/-/dotlottie-react-0.9.1.tgz#357f63053e3de03b9ba61bdf662ca5e7f12228af"
+  integrity sha512-2KAbT0sUu3fwbjTk1cfny9tVFg/8FTaitz64Dft+QV/Du6VHxWy3I1H83///UzAAU+rbbEN2Vn9s6GpuokJEAQ==
+  dependencies:
+    "@lottiefiles/dotlottie-web" "0.35.0"
+
+"@lottiefiles/dotlottie-web@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@lottiefiles/dotlottie-web/-/dotlottie-web-0.35.0.tgz#ad416f057293b9f4918ba0a586bd9bb8648113f8"
+  integrity sha512-dXyQzNGaNOovJ23skUaLs0RU1Hpr+e4JKCBW4Wq/HTVnTCqfhV4uYaG1lLloZy50QdPsUB3UyIgd656pcQwTQA==
+
 "@material-ui/core@^4.12.4":
   version "4.12.4"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.12.4.tgz#4ac17488e8fcaf55eb6a7f5efb2a131e10138a73"

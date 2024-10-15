@@ -44,8 +44,10 @@ export default function OtherNavbar(props: OtherNavbarProps){
             <Stack className="menu">
                 <Box>
                     <NavLink to="/">
-                        <img className="brand-logo" src="/icons/burak.svg" />
-
+                        <Box className="navbar-logo">
+                            <img className="brand-logo" src="/img/pizza-logo.webp" />
+                            <div className="brand-text">SLICE UP</div>
+                        </Box>
                     </NavLink>
                 </Box>
                 <Stack className="links">
@@ -53,7 +55,7 @@ export default function OtherNavbar(props: OtherNavbarProps){
                     <NavLink to="/">Home</NavLink>
                 </Box>
                 <Box className={"hover-line"}>
-                    <NavLink to="/products" activeClassName={"underline"}>Products</NavLink>
+                    <NavLink to="/products" activeClassName={"underline"}>Offerings</NavLink>
                 </Box>
                 {authMember ? ( <Box className={"hover-line"}>
                     <NavLink to="/orders" activeClassName={"underline"}>Orders</NavLink>
@@ -64,7 +66,7 @@ export default function OtherNavbar(props: OtherNavbarProps){
                 </Box>) : null}
 
                 <Box className={"hover-line"}>
-                    <NavLink to="/help" activeClassName={"underline"}>Help</NavLink>
+                    <NavLink to="/help" activeClassName={"underline"}>Support</NavLink>
                 </Box>
               
                 {/* Basket */}

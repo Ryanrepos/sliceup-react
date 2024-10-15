@@ -3,11 +3,12 @@ import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import Button from "@mui/material/Button";
 import { useGlobals } from "../../hooks/useGlobals";
 import { useState } from "react";
-import { Member, MemberUpdateInput } from "../../lib/types/member";
+import { MemberUpdateInput } from "../../lib/types/member";
 import { T } from "../../lib/types/common";
 import { sweetErrorHandling, sweetTopSmallSuccessAlert } from "../../lib/sweetAlert";
 import { Messages, serverApi } from "../../lib/config";
 import MemberService from "../../services/MemberService";
+
 export function Settings() {
   const {authMember, setAuthMember} = useGlobals();
   const [memberImage, setMemberImage] = useState<string>(
