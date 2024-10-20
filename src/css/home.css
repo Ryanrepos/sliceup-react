@@ -1,55 +1,132 @@
 .homepage {
     width: 100%;
     height: auto;
-    
 }
 
 /* STATISTICS COMPONENT */
 
+
 .homepage .static-frame {
-    width: 100%;
-    height: 150px;
-    background-color:#C75B7A;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(90deg, #d16ba5 0%, #86a8e7 100%);
 }
 
 .homepage .static-frame .info {
-   height: 100%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
+ height: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
 }
 
 .homepage .static-frame .info .static-box{
-    width: 200px;
-    height: 116px;
-    display: flex;
+  width: 200px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #C75B7A;
+  border-radius: 60px;
+}
+
+.homepage .static-frame .info .static-box .static-num {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80px;
+  color: #FFFFFF;
+
+}
+
+.homepage .static-frame .info .static-box .static-text{
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  color: #FFFFFF;
+
+}
+
+ /* .statistics-section {
+  width: 100%;
+  background: linear-gradient(90deg, #d16ba5 0%, #86a8e7 100%);
+  padding: 40px 0;
+}
+
+.statistics-info {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap; 
+  background-color: green;
+}
+
+.statistic-box {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 50%; 
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.statistic-num {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.statistic-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.divider {
+  height: 64px;
+  width: 2px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .statistics-info {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
- }
+    gap: 40px;
+  }
 
- .homepage .static-frame .info .static-box .static-num {
-    text-align: center;
-    font-family: Poppins;
+  .statistic-box {
+    width: 140px;
+    height: 140px;
+  }
+
+  .statistic-num {
     font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 80px;
-    color: #FFFFFF;
+  }
 
- }
+  .statistic-text {
+    font-size: 16px;
+  }
+} */
 
- .homepage .static-frame .info .static-box .static-text{
-    text-align: center;
-    font-family: "Poppins";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 30px;
-    color: #FFFFFF;
-
- }
 
  /* * PopularDishes * */
 .homepage .popular-dishes-frame {

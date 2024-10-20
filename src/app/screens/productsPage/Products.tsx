@@ -21,7 +21,6 @@ import { ProductCollection } from "../../lib/enums/product.enum";
 import { serverApi } from "../../lib/config";
 import { useHistory } from "react-router-dom";
 import { CartItem } from "../../lib/types/search";
-import { log } from "console";
 
 const logos = [
     { productName: "Gurme", imagePath: "/img/gurme.webp" },
@@ -107,7 +106,7 @@ export default function Products(props: ProductsProps){
                 <Stack className="products-big-box">
                     <Stack className="products-subject">
                         <Stack className="products-title-box">
-                            <Box className={"products-title"}>Burak Restaurant</Box>
+                            <Box className={"products-title"}>Our Menu</Box>
                             <Box className="search-container">
                                 <TextField
                                     className="search-input"
@@ -283,7 +282,7 @@ export default function Products(props: ProductsProps){
             <div className="brands-logo">
                <Stack className={"brands-container"}>
                 <Box className={"brands-title"}>
-                    Our Family Brands
+                    Monthly Discount
                 </Box>
                 <Stack className={"brands-images"}>
                 {logos.length !== 0 ? (

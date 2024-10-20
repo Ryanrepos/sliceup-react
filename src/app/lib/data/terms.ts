@@ -1,6 +1,6 @@
 export const terms = [
-	'Making orders from the site is complete, live register to use communications you must pass.',
-	'This is why you cannot cancel your orders once you have paid for them check before making payments.',
-	'It is not possible to write and distribute personal ads without the permission of the admin.',
-	'All your actions are under the control of our restaurant administration, so please follow the general rules.',
+	'Placing orders on the SliceUp website is essential for live communication and delivery tracking.',
+	'Once payment is completed, orders cannot be canceled. Please verify your order before proceeding with payment.',
+	'Personal advertisements or promotions must have prior approval from SliceUp management.',
+	'All customer activities are monitored by our restaurant administration; please adhere to our guidelines for a seamless experience.',
 ];

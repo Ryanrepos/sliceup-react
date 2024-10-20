@@ -1,26 +1,26 @@
 export const faq = [
 	{
-		question: 'How to make order?',
-		answer: 'You should choose products and make an order via basket!',
+		question: 'How do I place an order?',
+		answer: 'Simply browse our menu, select your desired items, and add them to your cart to complete your order!',
 	},
 	{
-		question: 'How long does delivery takes?',
-		answer: 'It depends on your location. The max delivery time is 1 hour!',
+		question: 'What is the estimated delivery time?',
+		answer: 'Delivery times vary by location, but typically, your order will arrive within 30 to 60 minutes.',
 	},
 	{
-		question: 'Is our details secure in this platform?',
-		answer: 'Of course, we take full responsibility for your provided user details!',
+		question: 'Is my personal information secure on this platform?',
+		answer: 'Absolutely! We prioritize your privacy and protect your personal information with the highest security standards.',
 	},
 	{
-		question: 'I am blocked, what should I do?',
-		answer: 'There is a reason for your block, please contact to us!',
+		question: 'What should I do if my account is blocked?',
+		answer: 'If your account is blocked, please reach out to our customer support for assistance in resolving the issue.',
 	},
 	{
-		question: 'How can I cancel order?',
-		answer: 'You can cancel your order any time easily, just go to your orders page!',
+		question: 'How can I cancel my order?',
+		answer: 'You can easily cancel your order by visiting your orders page before it is processed.',
 	},
 	{
-		question: 'Who developed this platform?',
-		answer: 'ITC Global developers developed this platform!',
+		question: 'Who created the SliceUp platform?',
+		answer: 'SliceUp was developed by a dedicated team of IT professionals at ITC Global.',
 	},
 ];

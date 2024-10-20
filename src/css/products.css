@@ -91,7 +91,6 @@
     flex-direction: row;
     justify-content: space-between;
 
-    /* background-color: aqua; */
 }
 
 .products .list-category-section .product-category {
@@ -102,6 +101,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: green;
 }
 
 .products .list-category-section .product-category .order {
@@ -151,7 +151,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative; 
-    border-top-right-radius: 50px; 
+    border-radius: 15px;
     transition: opacity 0.3s ease;
     opacity: 1;
 }
@@ -203,7 +203,7 @@
 .products .product-wrapper .product-card .product-img .product-sale {
     position: absolute;
     height: 30px;
-    width: 90px;
+    width: 110px;
     top: 10px;
     left: 10px;
     background: #FF9200;
@@ -363,6 +363,7 @@
     /* border: 2px solid white; */
     border-radius: 15px;
     box-shadow: 1px 2px 3px 4px rgb(97, 81, 81);
+    background-color: green;
 
 }
 

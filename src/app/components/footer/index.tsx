@@ -19,13 +19,13 @@ export default function Footer() {
       <Container>
         <Stack flexDirection={"row"} sx={{ mt: "94px" }}>
           <Stack flexDirection={"column"} style={{ width: "340px" }}>
-            <Box>
-              <img width={"100px"} src={"/icons/burak.svg"} />
-            </Box>
+          <Box>
+            <h1 style={{ color: "green", fontSize: "40px", fontWeight: "bold" }}>SLICE UP</h1>
+          </Box>
+
             <Box className={"foot-desc-txt"}>
-              Focusing on the gourmet Turkish breakfast as well as the youth
-              society, CZN Burak Gurme aims to bring Turkish cuisine back. CZN
-              Burak Gurme creates an illusion with its cuisine.
+            SliceUp is dedicated to offering delicious meals crafted with fresh ingredients, 
+              showcasing a blend of culinary artistry and tradition. Join us on a flavorful journey!
             </Box>
             <Box className="sns-context">
               <img src={"/icons/facebook.svg"} />
@@ -37,7 +37,7 @@ export default function Footer() {
           <Stack sx={{ ml: "288px" }} flexDirection={"row"}>
             <Stack>
               <Box>
-                <Box className={"foot-category-title"}>Bo'limlar</Box>
+                <Box className={"foot-category-title"}>Section</Box>
                 <Box className={"foot-category-link"}>
                   <Link to="/">Home</Link>
                   <Link to="/products">Products</Link>
@@ -57,7 +57,7 @@ export default function Footer() {
                 >
                   <Box flexDirection={"row"} className={"find-us"}>
                     <span>L.</span>
-                    <div>Downtown, Dubai</div>
+                    <div>Seoul, Korea</div>
                   </Box>
                   <Box className={"find-us"}>
                     <span>P.</span>
@@ -65,7 +65,7 @@ export default function Footer() {
                   </Box>
                   <Box className={"find-us"}>
                     <span>E.</span>
-                    <div>devexuz@gmail.com</div>
+                    <div>support@sliceup.com</div>
                   </Box>
                   <Box className={"find-us"}>
                     <span>H.</span>
@@ -81,7 +81,7 @@ export default function Footer() {
           sx={{ mt: "80px" }}
         ></Stack>
         <Stack className={"copyright-txt"}>
-          © Copyright Devex Global, All rights reserved.
+          © Copyright SliceUp Global, All rights reserved.
         </Stack>
       </Container>
     </Footers>

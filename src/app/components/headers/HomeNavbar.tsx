@@ -43,12 +43,12 @@ export default function HomeNavbar(props: HomeNavbarProps){
         <Container className="navbar-container">
             <Stack className="menu">
                 <Box>
-                    <NavLink to="/">
+               
                         <Box className="navbar-logo">
                             <img className="brand-logo" src="/img/pizza-logo.webp" />
                             <div className="brand-text">SLICE UP</div>
                         </Box>
-                    </NavLink>
+                  
                 </Box>
                 <Stack className="links">
                 <Box className={"hover-line"}>
