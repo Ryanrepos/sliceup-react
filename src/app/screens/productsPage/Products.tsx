@@ -111,7 +111,7 @@ export default function Products(props: ProductsProps){
                                 <TextField
                                     className="search-input"
                                     fullWidth
-                                    placeholder="Type here"
+                                    placeholder="Search menu"
                                     value={searchText}
                                     onChange={(e) => setSearchText(e.target.value)
                                     }

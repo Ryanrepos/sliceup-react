@@ -80,7 +80,7 @@ export default function OtherNavbar(props: OtherNavbarProps){
                      onClick={() => setLoginOpen(true)}
                 >Login</Button></Box>) : (<img 
                     className="user-avatar"
-                src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : "/icons/default-user.svg"}
+                src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : "/icons/man.png"}
                 aria-haspopup={"true"}
                 onClick={handleLogoutClick}
                 />)}

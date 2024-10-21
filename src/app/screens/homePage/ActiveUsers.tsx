@@ -31,7 +31,7 @@ export default function ActiveUsers() {
                                 return (
                                     <Stack key={member._id} className={"card"}>
 
-                                        <img src={imagePath} />
+                                        <img className={"active-users-img"} src={imagePath} />
                                         <div className={"card-name"}>{member.memberNick}</div>
                                     </Stack>
                                 );

@@ -18,102 +18,98 @@
 }
 
 .products .products-big-box {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /* background-color: green; */
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .products .products-big-box .products-subject {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
 }
 
 .products .products-big-box .products-subject .products-title-box {
-    margin-top: 60px;
-    width: 820px;
-    height: 46px;
-    background-color: #f8f8ff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  margin-top: 60px;
+  width: 820px;
+  height: 46px;
+  background-color: #f8f8ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .products .products-big-box .products-subject .products-title-box .search-container {
   background-color: rgb(210, 205, 205);
-  border-radius: 20px;
 
 }
 
 .products .products-big-box .products-title-box .products-title {
-    color: #343434;
-
-    width: 328px;
-    height: 46px;
-    font-family: "Roboto Serif";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px
+  color: #343434;
+  width: 328px;
+  height: 46px;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px
 }
 
 .products .products-big-box .products-buttons {
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: end;
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
 }
 
 .products .products-big-box .products-buttons .products-buttons-config {
-    height: 36.5px;
-    width: 250px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-right: 60px;
+  height: 36.5px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 60px;
 }
 
 .products .list-category-section {
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
 }
 
 .products .list-category-section .product-category {
-    margin-top: 30px;
-    height: 389px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: green;
+  margin-top: 30px;
+  height: 389px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .products .list-category-section .product-category .order {
-    transform: rotate(-90deg); /* Rotate the button text */
-    margin: 0; /* Remove any margin that might interfere with spacing */
-    white-space: nowrap; /* Prevent text wrapping */
-    transform-origin: center; /* Ensure rotation around the center */
-    width: 36px; /* Ensure a consistent width for all buttons */
-    height: auto; /* Allow the height to adjust based on the content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  transform: rotate(-90deg); /* Rotate the button text */
+  margin: 0; /* Remove any margin that might interfere with spacing */
+  white-space: nowrap; /* Prevent text wrapping */
+  transform-origin: center; /* Ensure rotation around the center */
+  width: 36px; /* Ensure a consistent width for all buttons */
+  height: auto; /* Allow the height to adjust based on the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products .product-wrapper {
@@ -206,7 +202,7 @@
     width: 110px;
     top: 10px;
     left: 10px;
-    background: #FF9200;
+    background: linear-gradient(90deg, #d16ba5 0%, #86a8e7 100%);
     color: white;
     padding: 5px 10px;
     border-radius: 25px;

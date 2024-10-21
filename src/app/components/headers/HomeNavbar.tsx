@@ -81,7 +81,7 @@ export default function HomeNavbar(props: HomeNavbarProps){
                     >Login</Button></Box>) 
                     : (<img 
                         className="user-avatar"
-                src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : "/icons/default-user.svg"}
+                src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : "/icons/man.png"}
                 aria-haspopup={"true"}
                 onClick={handleLogoutClick}
                 />)}
