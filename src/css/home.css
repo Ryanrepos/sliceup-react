@@ -7,8 +7,26 @@
 
 .homepage .static-frame {
   width: 100%;
-  height: 150px;
-  background: linear-gradient(90deg, #d16ba5 0%, #86a8e7 100%);
+  height: 200px;
+}
+
+.homepage .static-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.homepage .static-main .static-main-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  color: #000;
 }
 
 .homepage .static-frame .info {
@@ -17,6 +35,7 @@
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
+ gap: 20px;
 }
 
 .homepage .static-frame .info .static-box{
@@ -26,7 +45,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #C75B7A;
+  background-color: yellowgreen;
   border-radius: 60px;
 }
 
@@ -68,10 +87,10 @@
 }
 .homepage .popular-dishes-frame .popular-section .category-title {
    text-align: center;
-   font-family: "Roboto Serif";
+   font-family: "Poppins", sans-serif;
    font-size: 36px;
    font-style: normal;
-   font-weight: 600;
+   font-weight: 500;
    line-height: normal;
    letter-spacing: 1.44px;
    color: #000;
@@ -134,9 +153,9 @@
 
 .homepage .new-products-frame  .category-title {
     margin-top: 10px;
-    font-family: "Dancing Script";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: 43px;
 }
@@ -280,9 +299,9 @@
 .homepage .active-users-frame .category-title {
     width: 214px;
     height: 31px;
-    font-family: "Dancing Script";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: 43px;
 }
@@ -342,9 +361,9 @@
   }
   
   .homepage .events-frame .category-title {
-    font-family: "Dancing Script";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: 43px;
     padding-top: 20px;

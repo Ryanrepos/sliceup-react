@@ -23,10 +23,10 @@ import { useHistory } from "react-router-dom";
 import { CartItem } from "../../lib/types/search";
 
 const logos = [
-    { productName: "Gurme", imagePath: "/img/gurme.webp" },
-    { productName: "Seafood", imagePath: "/img/seafood.webp" },
-    { productName: "Sweets", imagePath: "/img/sweets.webp" },
-    { productName: "Doner", imagePath: "/img/doner.webp" },
+    { productName: "Gurme", imagePath: "/img/discount1.png" },
+    { productName: "Seafood", imagePath: "/img/discount2.png" },
+    { productName: "Sweets", imagePath: "/img/discount3.jpg" },
+    { productName: "Doner", imagePath: "/img/discount4.png" },
 ];
     
 // REDUX SLICE & SELECTOR
@@ -281,20 +281,20 @@ export default function Products(props: ProductsProps){
             
             <div className="brands-logo">
                <Stack className={"brands-container"}>
-                <Box className={"brands-title"}>
-                    Monthly Discount
-                </Box>
-                <Stack className={"brands-images"}>
-                {logos.length !== 0 ? (
-                logos.map((img, index) => (
-                    <Stack className={"brands-burak"} sx={{backgroundImage: `url(${img.imagePath})`}}>
+                    <Box className={"brands-title"}>
+                        Monthly Discount
+                    </Box>
+                    <Stack className={"brands-images"}>
+                    {logos.length !== 0 ? (
+                    logos.map((img, index) => (
+                        <Stack className={"brands-burak"} sx={{backgroundImage: `url(${img.imagePath})`}}>
 
+                        </Stack>
+                    ))
+                    ) : (
+                        <Box className={"no-data"}>New products are not available!</Box>
+                    )}
                     </Stack>
-                ))
-                ) : (
-                    <Box className={"no-data"}>New products are not available!</Box>
-                )}
-                </Stack>
                </Stack>
             </div>
 

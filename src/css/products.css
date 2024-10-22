@@ -1,8 +1,8 @@
 .product-page {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background: #f8f8ff;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: #f8f8ff;
 }
 
 /* Products Page */
@@ -54,9 +54,9 @@
   color: #343434;
   width: 328px;
   height: 46px;
-  font-family: "Roboto Serif";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 36px;
   line-height: 43px
 }
@@ -273,9 +273,9 @@
 /* Product title */
 .products .product-wrapper .product-card .product-desc .product-title {
     margin-top: 10px;
-    font-family: "GT Walsheim Pro";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 26px;
     color: #343434;
@@ -286,7 +286,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 366px;
+    width: 300px;
     background-color: #FFFCFC;
 }
 
@@ -334,7 +334,7 @@
 
 .products .brands-logo .brands-container .brands-title {
     margin-top: 30px;
-    font-family: Roboto;
+    font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: #E3C08D;
 }
@@ -348,15 +348,13 @@
     border-radius: 15px;
     padding: 50px;
     gap: 50px;
-
 }
 
 .products .brands-logo .brands-container .brands-images .brands-burak {
     width: 258px;
-    height: 350px;
+    height: 300px;
     background-size: cover;
     background-position: center;
-    /* border: 2px solid white; */
     border-radius: 15px;
     box-shadow: 1px 2px 3px 4px rgb(97, 81, 81);
     background-color: green;
@@ -395,7 +393,7 @@
 
 .products .address-area .address-title {
     margin-top: 30px;
-    font-family: Roboto serif;
+    font-family: "Poppins", sans-serif;
     font-size: 36px;
     color: #343434;
 }
@@ -557,18 +555,18 @@
   .products-page .chosen-product .button-box button {
     width: 230px;
     height: 44px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     line-height: 22px;
     color: #f8f8ff;
   }
   
   .products-page .chosen-product .title {
-    font-family: "Dancing Script";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 36px;
     line-height: 43px;
     margin-top: 40px;
