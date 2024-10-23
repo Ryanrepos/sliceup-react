@@ -63,6 +63,12 @@
     align-items: end;
 }
 
+.order-page .order-container .order-right .order-info-box .member-box .order-user-img .order-user-avatar {
+    width: 117px;
+    height: 112px;
+    border-radius: 2rem;
+}
+
 .order-page .order-container .order-right .order-info-box .member-box .order-user-img .order-user-prof {
     position: absolute;
     margin-left: 90px;

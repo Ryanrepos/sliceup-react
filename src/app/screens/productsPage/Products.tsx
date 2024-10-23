@@ -186,18 +186,18 @@ export default function Products(props: ProductsProps){
                                     DRINK
                                 </Button>
                             </Box>
-                            <Box>
+                            {/* <Box>
                                 <Button variant={"contained"} color={productSearch.productCollection === ProductCollection.DESSERT ? "primary" : "secondary"}
                                  className={"order"}
                                  onClick={() => searchCollectionHandler(ProductCollection.DESSERT)}>
                                     DESERT
                                 </Button>
-                            </Box>
+                            </Box> */}
                             <Box>
                                 <Button variant={"contained"} color={productSearch.productCollection === ProductCollection.DISH ? "primary" : "secondary"}
                                 className={"order"}
                                 onClick={() => searchCollectionHandler(ProductCollection.DISH)}>
-                                    DISH
+                                    PIZZA
                                 </Button>
                             </Box>
                         </Stack>
